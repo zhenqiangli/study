@@ -45,20 +45,20 @@ public class ThreadPoolExecutorTest {
 
 		Runnable runnable = null;
 		executor.execute(runnable);
-		
+
 		ConcurrentHashMap map = new ConcurrentHashMap();
 		map.put("a", "b");
 		map.get("a");
 		map.size();
-		
-		ThreadLocal<String> threadLocal = new ThreadLocal<>();
-		
+
+		ThreadLocal<String> threadLocal = new ThreadLocal<String>();
+
 		Thread.interrupted();
-		
+
 		Thread.sleep(10000L);
-		
+
 		ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
-		
+
 	}
 
 }
